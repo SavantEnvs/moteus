@@ -1,0 +1,2 @@
+set motor_position.output.reference_source 3
+get motor_position.output.reference_source

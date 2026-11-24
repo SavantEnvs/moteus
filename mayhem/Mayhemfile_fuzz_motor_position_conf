@@ -1,0 +1,11 @@
+project: savantenvs/moteus
+target: fuzz_motor_position_conf
+
+cmds:
+  - cmd: /mayhem/fuzz_motor_position_conf
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_motor_position_conf/testsuite

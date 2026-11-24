@@ -1,0 +1,11 @@
+project: savantenvs/moteus
+target: fuzz_fdcanusb_transport
+
+cmds:
+  - cmd: /mayhem/fuzz_fdcanusb_transport
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_fdcanusb_transport/testsuite

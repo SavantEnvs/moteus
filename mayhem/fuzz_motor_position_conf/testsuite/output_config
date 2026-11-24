@@ -1,0 +1,6 @@
+set motor_position.rotor_to_output_ratio 0.5
+set motor_position.sources.0.pll_filter_hz 200
+set motor_position.output.offset 0.25
+set motor_position.output.sign -1
+get motor_position.output.offset
+set motor.poles 14
